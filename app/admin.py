@@ -1,7 +1,8 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import BotUsers
+from .models import BotUsers,Image
+admin.site.register(Image)
 @admin.register(BotUsers)
 class BotUsersAdmin(admin.ModelAdmin):
     list_display = ['full_name','telegram_id','language']

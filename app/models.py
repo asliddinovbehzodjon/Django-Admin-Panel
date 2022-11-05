@@ -11,3 +11,7 @@ class BotUsers(models.Model):
         db_table = "Bot Foydalanuvchilari"
         verbose_name = "Bot User "
         verbose_name_plural = "Bot Users "
+class Image(models.Model):
+    image = models.ImageField(upload_to ='images')
+    def __str__(self):
+        return 'Image'
